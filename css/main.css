@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(202, 187, 251);
+  height: 50px;
+  background-color: lightgrey;
+}
+
+.cell.bottom-left {
+  grid-column: span 2;
+}
