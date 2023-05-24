@@ -18,7 +18,8 @@ const buttonClicked = (button) => {
       break
 
     case '+/-':
-      //console.log('+/- button clicked')
+      currentCalculatedValue = currentCalculatedValue * -1
+      currentCalculatedValueLabel = currentCalculatedValue
       break
 
     case '%':
