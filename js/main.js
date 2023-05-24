@@ -60,7 +60,7 @@ const buttonClicked = (button) => {
       numberButtonPressed(button)
       break
   }
-  currentValueElm.innerText = currentCalculatedValueLabel
+  currentValueElm.textContent = currentCalculatedValueLabel
 }
 
 const numberButtonPressed = (button) => {

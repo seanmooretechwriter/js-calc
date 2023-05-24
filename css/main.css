@@ -1,18 +1,40 @@
+body {
+  background-color: lightslategrey;
+  padding-left: 33%;
+  padding-right: 33%;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1px;
+  /*grid-gap: 1px;*/
+  border-style: none;
 }
 
 .cell {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgb(202, 187, 251);
+  border: 1px solid;
+  border-color: rgb(175, 175, 175);
+  border-style: solid;
   height: 50px;
   background-color: lightgrey;
+  color: rgb(80, 124, 124);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 
 .cell.bottom-left {
   grid-column: span 2;
+}
+
+#currentValue {
+  width: 100%;
+  background: none;
+  border-style: none;
+  font-size: 45px;
+  color: darkslategrey;
+  background-color: rgb(160, 173, 186);
+  font-family: Arial, Helvetica, sans-serif;
 }
